@@ -1,0 +1,40 @@
+{
+  "name": "harness-cache",
+  "version": "0.1.0",
+  "description": "Codex plugin for using Harness Cache as a multi-agent source-pointer cache.",
+  "author": {
+    "name": "Jameskywalker",
+    "email": "jamesskywalkero.o@gmail.com",
+    "url": "https://github.com/Jameskywalker"
+  },
+  "homepage": "https://jameskywalker.github.io/Harness-Cache/",
+  "repository": "https://github.com/Jameskywalker/Harness-Cache",
+  "license": "MIT",
+  "keywords": [
+    "cache",
+    "multi-agent",
+    "source-pointers",
+    "token-savings",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Harness Cache",
+    "shortDescription": "Route agents to verified source ranges and measure token savings.",
+    "longDescription": "Harness Cache gives Codex a source-pointer cache workflow for repeated project investigations. It helps agents search cached pointers before broad reads, open targeted source ranges, record evidence, and compare estimated token use against a no-cache baseline.",
+    "developerName": "Jameskywalker",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Analysis",
+      "Automation"
+    ],
+    "websiteURL": "https://jameskywalker.github.io/Harness-Cache/",
+    "defaultPrompt": [
+      "Run the Harness Cache token-savings demo.",
+      "Inspect what is inside the Harness Cache.",
+      "Use source pointers before broad file reads."
+    ],
+    "brandColor": "#115E59"
+  }
+}

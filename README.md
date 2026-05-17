@@ -93,6 +93,26 @@ The presentation site lives in `docs/` and is ready for GitHub Pages:
 https://jameskywalker.github.io/Harness-Cache/
 ```
 
+## Codex Plugin
+
+This repo includes a repo-local Codex plugin at `plugins/harness-cache`.
+
+Plugin contents:
+
+```text
+plugins/harness-cache/.codex-plugin/plugin.json
+plugins/harness-cache/skills/harness-cache/SKILL.md
+plugins/harness-cache/scripts/run_demo.py
+.agents/plugins/marketplace.json
+```
+
+Run the plugin wrapper:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 plugins/harness-cache/scripts/run_demo.py
+PYTHONDONTWRITEBYTECODE=1 python3 plugins/harness-cache/scripts/run_demo.py --inspect
+```
+
 ## Test
 
 ```bash

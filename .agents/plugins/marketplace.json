@@ -1,0 +1,20 @@
+{
+  "name": "harness-cache-local",
+  "interface": {
+    "displayName": "Harness Cache Local"
+  },
+  "plugins": [
+    {
+      "name": "harness-cache",
+      "source": {
+        "source": "local",
+        "path": "./plugins/harness-cache"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
