@@ -113,6 +113,23 @@ PYTHONDONTWRITEBYTECODE=1 python3 plugins/harness-cache/scripts/run_demo.py
 PYTHONDONTWRITEBYTECODE=1 python3 plugins/harness-cache/scripts/run_demo.py --inspect
 ```
 
+Measure real Codex CLI token usage for cached versus no-cache prompts:
+
+```bash
+# Preview the exact prompts without making model calls.
+PYTHONDONTWRITEBYTECODE=1 python3 plugins/harness-cache/scripts/run_demo.py --measure-codex --dry-run
+
+# Run two live `codex exec` calls and parse measured usage from ~/.codex/log/codex-tui.log.
+PYTHONDONTWRITEBYTECODE=1 python3 plugins/harness-cache/scripts/run_demo.py --measure-codex --yes
+
+# Machine-readable output.
+PYTHONDONTWRITEBYTECODE=1 python3 plugins/harness-cache/scripts/run_demo.py --measure-codex --yes --json-output
+```
+
+The measured fields include `input_tokens`, `cached_input_tokens`,
+`non_cached_input_tokens`, `output_tokens`, `reasoning_output_tokens`, and
+`total_tokens`.
+
 ## Test
 
 ```bash

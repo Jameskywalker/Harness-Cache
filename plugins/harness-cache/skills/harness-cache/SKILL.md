@@ -47,6 +47,17 @@ Print the demo cache state:
 python3 plugins/harness-cache/scripts/run_demo.py --inspect
 ```
 
+Measure real Codex CLI token usage by running one cached prompt and one
+no-cache prompt through `codex exec`:
+
+```bash
+python3 plugins/harness-cache/scripts/run_demo.py --measure-codex --dry-run
+python3 plugins/harness-cache/scripts/run_demo.py --measure-codex --yes
+python3 plugins/harness-cache/scripts/run_demo.py --measure-codex --yes --json-output
+```
+
+The measurement reads completed-turn usage from `~/.codex/log/codex-tui.log`.
+
 Use `PYTHONDONTWRITEBYTECODE=1` when running tests or demos if you want to avoid
 creating `__pycache__` directories.
 
@@ -74,4 +85,5 @@ For repository changes, run:
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests
 PYTHONDONTWRITEBYTECODE=1 python3 examples/demo_token_savings.py
 PYTHONDONTWRITEBYTECODE=1 python3 plugins/harness-cache/scripts/run_demo.py --inspect
+PYTHONDONTWRITEBYTECODE=1 python3 plugins/harness-cache/scripts/run_demo.py --measure-codex --dry-run
 ```
