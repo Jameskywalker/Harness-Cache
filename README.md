@@ -85,6 +85,14 @@ PYTHONDONTWRITEBYTECODE=1 python3 examples/demo_token_savings.py
 Expected result: Harness Cache should report fewer estimated tokens than the
 no-cache full-file baseline and `Saves tokens: True`.
 
+## Website
+
+The presentation site lives in `docs/` and is ready for GitHub Pages:
+
+```text
+https://jameskywalker.github.io/Harness-Cache/
+```
+
 ## Test
 
 ```bash
