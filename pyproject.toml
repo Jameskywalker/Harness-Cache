@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harness-cache"
+version = "0.1.0"
+description = "In-memory Harness Cache implementation with private L1 caches, shared L2/L3, HC-MOESI coherence, leases, invalidation, promotion gates, and metrics."
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Harness Cache Contributors" }]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["harness_cache*"]
